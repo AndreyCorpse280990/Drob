@@ -28,6 +28,31 @@ public:
 
     // Функция для деления дробей
 	Fraction divide(Fraction other) const;
+
+    // Перегрузка оператора сложения
+    Fraction operator+(const Fraction& other) const
+    {
+        return add(other);
+    }
+
+    // Перегрузка оператора вычитания
+    Fraction operator-(const Fraction& other) const
+    {
+        return subtract(other);
+    }
+
+    // перегрузка оператора умножения
+    Fraction operator*(const Fraction& other) const
+    {
+        return multiply(other);
+    }
+
+    // Перегрузка оператора деления
+    Fraction operator/(const Fraction& other) const
+    {
+        return divide(other);
+    }
+
 };
 
 
