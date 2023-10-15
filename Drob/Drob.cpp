@@ -78,10 +78,10 @@ int main()
     Fraction frac1(num1, denom1);
     Fraction frac2(num2, denom2);
 
-    Fraction resultAdd = frac1.add(frac2);
-    Fraction resultMultiply = frac1.multiply(frac2);
-    Fraction resultSubtract = frac1.subtract(frac2);
-    Fraction resultDivide = frac1.divide(frac2);
+    Fraction resultAdd = frac1 + frac2;
+    Fraction resultSubtract = frac1 - frac2;
+    Fraction resultMultiply = frac1 * frac2;
+    Fraction resultDivide = frac1 / frac2;
 
     std::cout << "Сложение: ";
     resultAdd.print();
@@ -98,6 +98,8 @@ int main()
     std::cout << "Деление: ";
     resultDivide.print();
     std::cout << std::endl;
+
+    
 
     return 0;
 }
